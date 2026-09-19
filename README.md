@@ -14,6 +14,14 @@ Each ASR manifest record links audio to a reference transcript and includes dial
 
 The construction scripts expect a dialogue JSONL input and an authorized VHF noise-audio source. Neither input data nor generated audio is distributed here.
 
+The dataset is available on [Hugging Face](https://huggingface.co/datasets/PassbyGrocer/VHF-8K) and can be loaded with:
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("PassbyGrocer/VHF-8K")
+```
+
 ### VHF-500
 
 VHF-500 contains 500 real-radio sentences and is used only for evaluation. ASR transcripts were manually checked and annotated against the audio. Vessel-name information was then manually inspected and labeled. The set contains 432 sentences with vessel mentions and 68 without. The recordings and annotations are not distributed in this repository.
