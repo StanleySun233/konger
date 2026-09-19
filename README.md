@@ -1,8 +1,8 @@
 # KONGER
 
-This repository accompanies “KONGER: Uncovering Layer-Wise Phonetic Confuser Dynamics for Selective Adaptation in Maritime VHF Speech.”
+This repository provides VHF-8K construction code and the dataset and training details needed to audit the KONGER experiments.
 
-The repository contains the manuscript source and code for constructing VHF-8K audio and its ASR manifests. It does not contain model training code, PBS job scripts, model weights, raw audio, or the VHF-500 recordings and annotations.
+It does not contain model training code, PBS job scripts, model weights, raw audio, or the VHF-500 recordings and annotations.
 
 ## Datasets
 
@@ -40,9 +40,3 @@ The scripts are under `dataset/scripts/`; shared audio and profile modules are u
 | `build_vhf8k_paired_evaluation.py` | Construct matched no-context, supported-context, and Konger-context evaluation views |
 
 `build_vhf_noise_bank.py` requires `--source-dir` and does not assume a local dataset path. Dialogue JSONL records supplied to `run_step2_tts_vhf.py` contain `dialogue_id`, `event`, `intent`, `provider`, `model`, `ship_names`, and `utterance` fields. Generated manifests refer to audio paths on the user's machine.
-
-## Manuscript
-
-The LaTeX source, bibliography, figures, and conference style file are under `paper/`.
-
-VHF-8K construction code is available at https://github.com/StanleySun233/konger.
