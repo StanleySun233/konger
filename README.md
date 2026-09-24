@@ -2,8 +2,6 @@
 
 This repository provides VHF-8K construction code and the dataset and training details needed to audit the KONGER experiments.
 
-It does not contain model training code, PBS job scripts, model weights, raw audio, or the VHF-500 recordings and annotations.
-
 ## Datasets
 
 ### VHF-8K
